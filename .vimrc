@@ -6,7 +6,7 @@ set nocompatible
 call plug#begin('~/.vim/bundle')
     Plug 'VundleVim/vundle.vim'
     Plug 'Valloric/YouCompleteMe'
-    Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
+    Plug 'scrooloose/nerdtree' ", { 'on': 'NERDTreeToggle'}
     Plug 'rhysd/vim-clang-format'
     Plug 'majutsushi/tagbar'
     Plug 'mattn/emmet-vim'
@@ -18,6 +18,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'junegunn/fzf.vim'
     Plug 'StanAngeloff/php.vim', { 'for': 'php'}
     Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
+    Plug 'jistr/vim-nerdtree-tabs'
 call plug#end()
 
 filetype plugin indent on
@@ -88,6 +89,8 @@ set listchars=tab:▶\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 
 
 "Map
+map <C-l> :tabn<CR>
+map <C-h> :tabp<CR>
 map <F3> :NERDTreeToggle <CR>
 map <F4> :TagbarToggle <CR>  
 map <F9> :!g++ % -o %< && ./%< <CR>
