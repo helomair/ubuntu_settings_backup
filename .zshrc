@@ -104,4 +104,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias sapt='sudo apt install'
+alias gc='git checkout'
+alias gitdel='del() { git branch | grep "$1" | xargs git branch -d };  del'
+
 source /home/helomair/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Disable C-s lock
+stty -ixon
