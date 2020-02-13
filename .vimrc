@@ -19,6 +19,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'StanAngeloff/php.vim', { 'for': 'php'}
     Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
     Plug 'jistr/vim-nerdtree-tabs'
+    Plug 'reewr/vim-monokai-phoenix'
 call plug#end()
 
 filetype plugin indent on
