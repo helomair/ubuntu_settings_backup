@@ -107,7 +107,12 @@ alias sapt='sudo apt install'
 alias gc='git checkout'
 alias gitdel='del() { git branch | grep "$1" | xargs git branch -d };  del'
 
-source /home/helomair/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /home/helomair/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Disable C-s lock
 stty -ixon
+
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#ctags
+alias phptags='ctags --langmap=php:.engine.inc.module.theme.php  --php-kinds=cdf  --languages=php'
