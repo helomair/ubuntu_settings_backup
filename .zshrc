@@ -68,7 +68,10 @@ ZSH_THEME="arrow"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,8 +80,12 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
+export GOPATH=$HOME/go
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+export PATH=$PATH:/home/helomair/.local/share/bob/nvim-bin
+export LC_ALL="zh_TW.UTF-8"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -116,3 +123,7 @@ stty -ixon
 
 #ctags
 alias phptags='ctags --langmap=php:.engine.inc.module.theme.php  --php-kinds=cdf  --languages=php'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
