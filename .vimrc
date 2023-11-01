@@ -1,5 +1,6 @@
 "source /usr/share/doc/fzf/examples/fzf.vim
 "Set Vim-Plug
+set encoding=utf-8
 filetype off
 set nocompatible
 
