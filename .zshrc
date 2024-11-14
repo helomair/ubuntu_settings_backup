@@ -8,7 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="arrow"
+#ZSH_THEME="arrow"
+ZSH_THEME="kennethreitz"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -86,6 +87,7 @@ export LC_ALL=en_US.UTF-8
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export PATH=$PATH:/home/helomair/.local/share/bob/nvim-bin
 export LC_ALL="zh_TW.UTF-8"
+export LC_CTYPE=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -113,6 +115,10 @@ alias l='ls -CF'
 alias sapt='sudo apt install'
 alias gc='git checkout'
 alias gitdel='del() { git branch | grep "$1" | xargs git branch -d };  del'
+alias dcup='sudo docker-compose -f ~/mygit/docker-compose.yml up --build -d'
+alias dcdown='sudo docker-compose -f ~/mygit/docker-compose.yml down'
+alias p8ar='php8.3 artisan'
+alias p8composer='php8.3 /usr/local/bin/composer'
 
 #source /home/helomair/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
