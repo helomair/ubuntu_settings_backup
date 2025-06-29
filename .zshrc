@@ -82,12 +82,14 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export GOPATH=$HOME/go
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export PATH=$PATH:/home/helomair/.local/share/bob/nvim-bin
-export LC_ALL="zh_TW.UTF-8"
-export LC_CTYPE=en_US.UTF-8
+
+export LANG=zh_TW.UTF-8
+export LANGUAGE=zh_TW:zh
+export LC_ALL=zh_TW.UTF-8
+export LC_CTYPE=zh_TW.UTF-8
+
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
